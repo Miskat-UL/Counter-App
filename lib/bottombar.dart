@@ -1,7 +1,7 @@
 import 'package:counter_app/screens/counter1.dart';
 import 'package:counter_app/screens/counter2.dart';
 import 'package:counter_app/screens/counter3.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class Bottombar extends StatefulWidget {
@@ -13,29 +13,7 @@ class Bottombar extends StatefulWidget {
 
 class _Bottombar extends State<Bottombar> {
   int _page = 0;
-  // late PageController pageController;
   final PageStorageBucket bucket = PageStorageBucket();
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   pageController = PageController();
-  // }
-
-  // @override
-  // void dispose() {
-  //   super.dispose();
-  //   pageController.dispose();
-  // }
-
-  // void pageChanger(int page) {
-  //   pageController.jumpToPage(page);
-  // }
-
-  // void onPageChanged(int page) {
-  //   setState(() {
-  //     _page = page;
-  //   });
-  // }
 
   final List<Widget> pages = const [
     CounterOne(
